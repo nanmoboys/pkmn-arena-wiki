@@ -1,0 +1,5 @@
+# 预构建产物走 gh-pages 分支，不进 main
+site/
+build.log
+__pycache__/
+*.pyc

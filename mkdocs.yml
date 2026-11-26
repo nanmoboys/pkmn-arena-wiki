@@ -1,0 +1,51 @@
+site_name: 宝可梦竞技场 百科
+site_description: 宝可梦竞技场 v3.70.5（M19）对战百科 —— 只收录 #0001—#0649，专注种族值、招式、特性与道具。数据由游戏源码自动抽取，与 ROM 一致。
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+copyright: 版权归 Nintendo、Game Freak 与 Greaturesinc. 所有。本站资料由游戏源码自动抽取生成。
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+  features:
+    - navigation.top
+    - navigation.sections
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search:
+      separator: '[\s\-／/、,，。！?？（）()\[\]]+'
+      pipeline: []
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: "¶"
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+
+nav:
+  - 首页: index.md
+
+  - 宝可梦图鉴（1—649）: pokemon/index.md
+  - 招式: moves/index.md
+  - 特性: abilities/index.md
+  - 道具: items/index.md
+  - 对战条款: rules.md
+
